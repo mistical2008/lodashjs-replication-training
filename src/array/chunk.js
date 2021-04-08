@@ -6,6 +6,8 @@ function chunk(array, size = 1) {
 
   while (true) {
     currentCut++;
+    // TODO:  <08-04-21, Write more performant algorithm
+    // without splicing from the array start> //
     const chunk = clonedArr.splice(0, size)
     chunkedArr.push(chunk)
 
