@@ -1,7 +1,8 @@
-const compact = require('./compact')
-const {compareArrays} = require("../utils")
+import compact from './compact'
+import {compareArrays} from "../utils"
 
 const array = [2, false, "6", "", 12, NaN, 8, undefined, null, 33, "0", 0, "hello", "i'm not falsey"]
+// const array = "hello"
 const arrayCompact = [2, "6", 12, 8, 33, "0", "hello", "i'm not falsey"]
 
 const array2 = [2, 3, 6, 10, 12, 40, 8, 5, 9, 28, 10, 12, 40, 8, 5, 9, 33]
@@ -11,7 +12,7 @@ const array3 = [2, 3, 6, 0, 10, 12, 40, 8, 5, 9, 33]
 const arrayCompact3 = [2, 3, 6, 10, 12, 40, 8, 5, 9, 33]
 
 const array4 = [false, undefined, null, "", NaN, 0];
-const arrayCompact4 = [];
+const arrayCompact4: any[] = [];
 
 // eslint-disable-next-line no-undef
 describe('compact():', () => {

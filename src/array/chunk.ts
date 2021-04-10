@@ -1,4 +1,4 @@
-function chunk(array, size = 1) {
+function chunk(array: any[], size = 1): any[] {
   if (size === null || array.length === 0) return [];
 
   const chunckedLen = Math.ceil(array.length / size)
@@ -13,5 +13,4 @@ function chunk(array, size = 1) {
   return chunked;
 }
 
-module.exports = chunk;
-
+export default chunk;

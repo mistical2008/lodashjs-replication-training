@@ -1,5 +1,5 @@
-const chunk = require('./chunk')
-const {compareArrays} = require('../utils/index')
+import chunk from './chunk'
+import {compareArrays} from '../utils/index'
 
 const array = [2, 3, 6, 10, 12, 40, 8, 5, 9, 33]
 const arrayChuncked = [[2, 3, 6], [10, 12, 40], [8, 5, 9], [33]]
@@ -16,8 +16,8 @@ const arrayChuncked2 = [
 const array3 = [2, 3, 6, 10, 12, 40, 8, 5, 9, 33]
 const arrayChuncked3 = [[2, 3], [6, 10], [12, 40], [8, 5], [9, 33]]
 
-const array4 = [];
-const arrayChuncked4 = [];
+const array4: any[] = [];
+const arrayChuncked4: any[] = [];
 
 // eslint-disable-next-line no-undef
 describe('chunk():', () => {
