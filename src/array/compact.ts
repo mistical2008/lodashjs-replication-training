@@ -1,4 +1,4 @@
-function compact(array: any[]): any[] {
+function compact(array: []): Array<[]> {
   return array.filter(item => item)
 }
 

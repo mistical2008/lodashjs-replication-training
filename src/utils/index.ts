@@ -1,10 +1,11 @@
-export function compareArrays<T>(callback: Function, args: T | any[], result: any[]) {
+export function compareArrays(callback: CallableFunction, args: unknown[], result: unknown[]): void {
   const str: string = JSON.stringify(result)
-  const resStr: string = JSON.stringify(callback.apply(null, args))
+  const resStr: string = JSON.stringify(callback(...args))
 
   /* eslint-disable no-undef */
   test(`should return ${str} `, () => {
     expect(resStr).toBe(str);
   });
 }
+
 
