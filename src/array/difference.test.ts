@@ -13,4 +13,8 @@ describe('difference(source[], filter[])', () => {
   const src3: any[] = [1, 2];
   const filter3: any[] = [];
   compareArrays(difference, [src3, filter3], [1, 2]);
+
+  const src4: any[] = [1, 2];
+  const filter4: any[] = [1, 2];
+  compareArrays(difference, [src4, filter4], []);
 });
