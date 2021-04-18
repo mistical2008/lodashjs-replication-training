@@ -7,7 +7,7 @@ function chunk(array: unknown[], size = 1): Array<[]> {
   let arrayIndex = 0;
 
   while (chunckedIndex < chunckedLen) {
-    chunked[chunckedIndex += 1] = array.slice(arrayIndex, (arrayIndex += size));
+    chunked[chunckedIndex++] = array.slice(arrayIndex, (arrayIndex += size));
   }
 
   return chunked;
